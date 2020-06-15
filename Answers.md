@@ -1,0 +1,5 @@
+1.  Stateful class components are parent components. They are exported, and extend React.Component. They also use the constructer and super methods. They have have state and pass props to child components.
+2.  The three phases are Mounting, Updating and Unmounting. Mounting means you are putting elements in the DOM(ex. constructor(), props, render(), componentDidMount()). Updating is when there is a change in the components state or props(ex. componentDidUpdate()). Finally, there is unmounting, which is when a component is removed from the DOM.
+3.  See answer 2.
+4.  Stateful logic is code that uses state.
+5.  In order to test a component, we need to create a test file (ex. CheckoutForm.test.js), import our needed methods from @testing-library/react, and render the component we want to test. (ex. const {container} = render(<CheckoutForm />); ). Depending on the type of component, we may need differewnt methods to test. In the CheckoutForm case we use the render, fireEvent, waitFor, and getByTestId methods.
